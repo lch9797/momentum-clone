@@ -1,0 +1,124 @@
+.hidden {
+  display: none;
+}
+:root {
+  --main-color: whitesmoke;
+  --border-bottom: 2px solid var(--main-color);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--main-color);
+}
+img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+#clock {
+  font-size: 180px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 320px;
+}
+#login-form {
+  text-align: center;
+  position: relative;
+  top: 350px;
+}
+#login-form input {
+  border: none;
+  border-bottom: var(--border-bottom);
+  background: none;
+  width: 400px;
+  height: 45px;
+  color: var(--main-color);
+  font-size: 40px;
+}
+#login-form input::placeholder {
+  color: var(--main-color);
+  opacity: 0.7;
+  font-size: 40px;
+  text-align: center;
+}
+#login-form input:hover::placeholder {
+  opacity: 1;
+}
+#login-form input:focus {
+  outline: none;
+}
+#greeting {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 350px;
+  color: var(--main-color);
+  font-size: 40px;
+  font-weight: 500;
+}
+#todo-form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 380px;
+  padding-bottom: 10px;
+}
+#todo-form input {
+  border: none;
+  border-bottom: var(--border-bottom);
+  background: none;
+  width: 220px;
+  height: 25px;
+  color: var(--main-color);
+  font-size: 15px;
+}
+#todo-form input::placeholder {
+  text-align: center;
+  color: var(--main-color);
+  opacity: 0.7;
+  font-size: 15px;
+}
+#todo-form input:hover::placeholder {
+  opacity: 1;
+}
+#todo-form input:focus {
+  outline: none;
+}
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 380px;
+}
+#todo-list li {
+  padding-bottom: 2px;
+}
+#todo-list button {
+  background: none;
+  border: 0;
+}
+#quote {
+  z-index: 0;
+  position: absolute;
+  bottom: 30px;
+  width: 100vw;
+  font-size: 15px;
+}
+#quote span {
+  display: block;
+  text-align: center;
+}
+
+#weather {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
